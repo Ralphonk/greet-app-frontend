@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "./assets/YoungLabsLogo.png"
 
 function App() {
   const [name, setName] = useState("");
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <>
-      <img src="../src/assets/YoungLabsLogo.png" alt="younglabs logo" style={{ display: "block", margin: "0 auto", width: "550px", height: "auto" }} />
+      <img src={logo} alt="younglabs logo" style={{ display: "block", margin: "0 auto", width: "550px", height: "auto" }} />
       <div style={{ textAlign: "center", marginTop: "5px" }}>
         <i style={{ display: "block", margin: "50px", color: "GrayText" }}>Your friend, your guide and your partner in the journey of parenting</i>
         <input
