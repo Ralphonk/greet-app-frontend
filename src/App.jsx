@@ -8,7 +8,7 @@ function App() {
   const fetchGreeting = async () => {
     setMessage("");
     setError("");
-    const response = await fetch(`http://localhost:5000/api/greet?name=${name}`);
+    const response = await fetch(`https://greet-app-backend.onrender.com/api/greet?name=${name}`);
     const data = await response.json();
 
     if (response.ok) {
