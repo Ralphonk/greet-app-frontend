@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <img src={logo} alt="younglabs logo" style={{ display: "block", margin: "0 auto", width: "550px", height: "auto" }} />
+      <img src={logo} alt="younglabs logo" style={{ display: "block", margin: "0 auto", width: "650px", height: "auto" }} />
       <div style={{ textAlign: "center", marginTop: "5px" }}>
         <i style={{ display: "block", margin: "50px", color: "GrayText" }}>Your friend, your guide and your partner in the journey of parenting</i>
         <input
