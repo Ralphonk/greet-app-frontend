@@ -1,12 +1,71 @@
-# React + Vite
+# YoungLabs - Simple API & Frontend Page  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Node.js Express** API and a **React Frontend** that displays a greeting message.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
+- **Backend** (Node.js + Express)  
+  - `GET /api/greet?name=YourName` → Returns a greeting message  
+  - Error handling for missing name  
 
-## Expanding the ESLint configuration
+- **Frontend** (React + Vite)  
+  - Input field to enter a name  
+  - "Get Greeting" button to fetch & display the response  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Installation & Setup  
+
+```sh
+1. Clone the Repository  
+git clone https://github.com/your-username/younglabs.git
+cd younglabs
+
+2️⃣ Backend Setup (Node.js)
+cd backend
+npm install
+npm start   # Runs the Express server on port 5000
+
+3️⃣ Frontend Setup (React + Vite)
+cd frontend
+npm install
+npm run dev   # Starts React frontend
+```
+
+### 1️⃣ Get Greeting  
+**Endpoint:**  
+```http
+GET /api/greet?name=YourName
+Response (Success - 200):
+
+{
+  "message": "Hello, YourName! Welcome to Younglabs."
+}
+
+Response (Error - 400, if name is missing):
+
+{
+  "error": "Name is required."
+}
+
+Example Usage:
+
+curl "http://your-backend-url.com/api/greet?name=Umesh"
+```
+## 🚀 Deployment Guide  
+
+### 📌 Backend Deployment (Render/Vercel)  
+1. **Push your backend code to GitHub**  
+2. **Deploy using [Render](https://render.com/) or [Vercel](https://vercel.com/)**  
+3. **Set environment variable:**  
+   ```env
+   PORT=5000
+   ```
+### 📌 Frontend (Vercel/Netlify)
+1. Push your frontend code to GitHub
+2. Deploy using Vercel or Netlify
+3. Update the API URL in App.jsx
+
+## 🌍 Live Demo  
+🔗 **[Live site](https://younglabs-screening-task.netlify.app/)**
